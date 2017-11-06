@@ -13,7 +13,7 @@ class InstantclientBasic < Formula
 
   def install
     %w[libclntsh.dylib libocci.dylib].each do |dylib|
-      ln_s "#{dylib}.12.1", dylib
+      # ln_s "#{dylib}.12.1", dylib
     end
     lib.install Dir["*.dylib*"]
   end
