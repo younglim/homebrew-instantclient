@@ -7,9 +7,9 @@ class InstantclientBasic < Formula
 
   url "http://download.oracle.com/otn/mac/instantclient/122010/instantclient-basic-macos.x64-12.2.0.1.0.zip",
       :using => CacheWoDownloadStrategy
-  sha256 "04a84542b5bd0a04bc45445e220a67c959a8826ce987000270705f9a1d553157"
+  sha256 "5b009cd3e69714179904b6f74de7435e7ae476880a7df775107a28ce7ac8be10"
 
- # conflicts_with "instantclient-basiclite"
+conflicts_with "instantclient-basiclite"
 
   def install
     %w[libclntsh.dylib libocci.dylib].each do |dylib|
