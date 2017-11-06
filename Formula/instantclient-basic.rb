@@ -9,7 +9,7 @@ class InstantclientBasic < Formula
       :using => CacheWoDownloadStrategy
   sha256 "04a84542b5bd0a04bc45445e220a67c959a8826ce987000270705f9a1d553157"
 
-  conflicts_with "instantclient-basiclite"
+ # conflicts_with "instantclient-basiclite"
 
   def install
     %w[libclntsh.dylib libocci.dylib].each do |dylib|
